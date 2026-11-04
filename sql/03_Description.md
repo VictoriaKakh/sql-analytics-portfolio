@@ -1,8 +1,9 @@
 # **Цель:** Необходимо посчитать общее число заказов по дням, количество среди них первых заказов и Число заказов новых пользователей    
-<ins> Входные данные таблицы:</ins> orders (creation_time, order_id, product_ids),user_actions user_actions (user_id, time, action, order_id)
+<ins>Входные данные таблицы:</ins> orders (creation_time, order_id, product_ids),user_actions user_actions (user_id, time, action, order_id)
 Логика расчёта: 
 1.	Определяем общее число неотмененных заказов по дням orders (table3).
 2.	Считаем количество первых заказов в день, с помощью нахождения min(time) для каждого пользователя (table4)
 3.	Для нахождения числа заказов новых пользователей находилось время первого действия (неважно отмены или создания заказа) пользователя на сайте (table_for_3_part). Также создавалась таблица с общим числом заказов на каждую дату для каждого пользователя. Затем они объединялись (table100) и высчитывалось число заказов новых пользователей в этот день.
-Примечание: Исключаем заказы со статусом cancel. 
-Выходные поля: date, orders, first_orders, new_users_orders, first_orders_share, new_users_orders_share
+    
+*Примечание:* Исключаем заказы со статусом cancel.   
+<ins>Выходные поля:</ins> date, orders, first_orders, new_users_orders, first_orders_share, new_users_orders_share
