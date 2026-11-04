@@ -6,6 +6,7 @@
 3. Считаем накопительный итог (total) через SUM() OVER().
 4. Делаем смещение по колонке new_users и new_couriers, чтобы оценить прирост за день с помощью LAG().
 5. Для расчета прироста вычитаем 100, чтобы принести наши данных к исходным 0%.
-Примечание: считаем заказы, где дата заказа = дата первого действия пользователя. Исключаем заказы со статусом cancel. На данном дашборде нет прироста общего числа пользователей (total_users_growth) и курьеров (total_couriers_growth)
-Выходные поля: date, new_users, new_couriers,  total_users, total_couriers, new_users_change, new_couriers_change
+     
+*Примечание:* считаем заказы, где дата заказа = дата первого действия пользователя. Исключаем заказы со статусом cancel. На данном дашборде нет прироста общего числа пользователей (total_users_growth) и курьеров (total_couriers_growth)  
+ <ins>Выходные поля: </ins> date, new_users, new_couriers,  total_users, total_couriers, new_users_change, new_couriers_change
 
